@@ -3,5 +3,24 @@
     "pg": "^8.8.0",
     "socket.io": "^4.5.1",
     "sqlite3": "^5.0.8"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "nyprov",
+  "description": "",
+  "version": "1.0.0",
+  "main": "db.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adamsalvius/korfus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adamsalvius/korfus/issues"
+  },
+  "homepage": "https://github.com/Adamsalvius/korfus#readme"
 }
