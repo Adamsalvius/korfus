@@ -39,7 +39,10 @@ const db = new Client( {
       console.error(err.message);
     } else {
       const insertroomsq = `INSERT INTO rooms (room_name) VALUES ($1)`;
-     
+      db.query(insertroomsq, [
+        "hork"
+        
+      ])
     }
   });
   db.query(messagesq, (err) => {
