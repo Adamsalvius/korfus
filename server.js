@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
 
   socket.on("create_room", async (data, msg) => {
     console.log(`room created: ` + data);
-    roomsModel.createRoom(data);
+    await roomsModel.createRoom(data);
     msg({ status: 200 });
     const rooms = await roomsModel.getRooms();
     socket.emit("get_rooms", rooms);

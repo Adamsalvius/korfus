@@ -1,17 +1,5 @@
 const {Client} = require("pg");
 
-const roomsq = `
-  CREATE TABLE IF NOT EXISTS rooms (
-    id SERIAL PRIMARY KEY,
-    room_name TEXT)`;
-
-  const messagesq = `
-  CREATE TABLE IF NOT EXISTS message (
-    id SERIAL PRIMARY KEY,
-    value TEXT NOT NULL,
-    room TEXT NOT NULL,
-    user TEXT NOT NULL,
-    date TEXT)`;
 
 
 const db = new Client( {
@@ -30,6 +18,19 @@ const db = new Client( {
   } */
   db.connect();
   console.log("connected to db");
+  const roomsq = `
+  CREATE TABLE IF NOT EXISTS rooms (
+    id SERIAL PRIMARY KEY,
+    room_name TEXT)`;
+
+  const messagesq = `
+  CREATE TABLE IF NOT EXISTS message (
+    id SERIAL PRIMARY KEY,
+    value TEXT NOT NULL,
+    room TEXT NOT NULL,
+    user TEXT NOT NULL,
+    date TEXT)`;
+
 
   
   
