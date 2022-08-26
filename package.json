@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "pg": "^8.8.0",
+    "serve": "^14.0.1",
     "socket.io": "^4.5.1",
     "sqlite3": "^5.0.8"
   },
@@ -11,7 +12,6 @@
   "description": "",
   "version": "1.0.0",
   "main": "db.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adamsalvius/korfus.git"
